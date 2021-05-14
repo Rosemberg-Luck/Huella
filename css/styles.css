@@ -1,0 +1,132 @@
+body{
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #11141b;
+}
+
+.pl{
+    padding-left: 0px;
+}
+
+.navbar {
+    min-height: 100px;
+    
+}
+
+.nav-link{ 
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.navbar-toggler{ 
+    font-size: 35px;
+}
+.navbar-toggler:focus{ 
+    outline: none;
+}
+
+.form-control:focus-visible{
+    box-shadow: none;
+}
+.py-6{
+    padding-top: 7rem;
+    padding-bottom: 0rem;
+}
+
+p.inicio { 
+    text-indent: 20px; 
+}
+
+#estilo1{
+    background: #13131b;
+}
+
+#estilo2{
+    background:#11141b;
+}
+
+.alternative{
+    filter: invert(100%);
+}
+
+textarea.size{
+    resize: none;
+}
+
+.icon-h{
+    color:white;
+    zoom: 6;
+}
+
+.icon-hand{
+    color:white;
+    zoom:2;
+    margin-right: 5px;
+}
+
+.cw{
+    color:white !important;
+}
+.Confirm{
+    color: #0fd99d;
+}
+.btn:hover{
+    background-color:#0fd99cf3 !important;
+    color: white;
+}
+
+a:hover{
+    color:#0fd99d !important;
+}
+#navbar:hover{
+    padding-bottom: 4px;
+    border-bottom: 2px solid #0fd99d;
+}
+
+.green{
+    color:#0fd99d !important;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #0fd99d;
+}
+
+.card-b{
+    
+    background-color: #11141b;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    color: white;
+}
+
+.cblack{
+    color:black;
+}
+
+.scroll{
+height: 80px;
+overflow-y: scroll;
+width: auto;
+}
+
+.img {
+    display: block;
+    max-width: 100% !important;
+    height: auto;
+  }
+.img-fluid1{
+    max-width: 350 !important;
+    max-height: 320;
+}
+.img-fluid2{
+    max-height: 500px;
+    width: 350px;
+    border-radius: 2%;
+}
+.img-fluid3{
+    max-height: 400px;
+    width: 350px;
+    border-radius: 2%;
+}
+.img-fluid4{
+    border-radius: 2%;
+    max-width: -webkit-fill-available;
+    height: 233px;
+}
