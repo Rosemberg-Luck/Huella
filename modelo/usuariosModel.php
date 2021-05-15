@@ -13,6 +13,8 @@ header('Content-Type: text/html; charset=UTF-8');
 class Usuarios
 {
     private $db;
+    private $email="";
+    private $password="";
     public function __construct()
     {
         $this->listaUsuarios = array();
@@ -201,13 +203,13 @@ class Usuarios
                     $mail->SMTPAuth = true;                                          // Send using SMTP
                     $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
                     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-                    $mail->Username   = '@gmail.com';                     // SMTP username
-                    $mail->Password   = '';                               // SMTP password
+                    $mail->Username   = $email;                     // SMTP username
+                    $mail->Password   = $password;                               // SMTP password
                     $mail->SMTPSecure = 'ssl';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
                     $mail->Port       = 465;
 
                     //Recipients
-                    $mail->setFrom('@gmail.com', 'Huella');
+                    $mail->setFrom('email', 'Huella');
                     $mail->addAddress($email, $email);
 
 
@@ -271,8 +273,8 @@ class Usuarios
             $mail->SMTPAuth = true;                                          // Send using SMTP
             $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-            $mail->Username   = '@gmail.com';                     // SMTP username
-            $mail->Password   = '';                               // SMTP password
+            $mail->Username   = $email;                     // SMTP username
+            $mail->Password   = $password;                               // SMTP password
             $mail->SMTPSecure = 'ssl';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
             $mail->Port       = 465;
 
