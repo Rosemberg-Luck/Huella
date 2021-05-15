@@ -201,13 +201,13 @@ class Usuarios
                     $mail->SMTPAuth = true;                                          // Send using SMTP
                     $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
                     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-                    $mail->Username   = 'empresahuella@gmail.com';                     // SMTP username
-                    $mail->Password   = 'huella1234567';                               // SMTP password
+                    $mail->Username   = '@gmail.com';                     // SMTP username
+                    $mail->Password   = '';                               // SMTP password
                     $mail->SMTPSecure = 'ssl';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
                     $mail->Port       = 465;
 
                     //Recipients
-                    $mail->setFrom('empresahuella@gmail.com', 'Huella');
+                    $mail->setFrom('@gmail.com', 'Huella');
                     $mail->addAddress($email, $email);
 
 
@@ -271,13 +271,13 @@ class Usuarios
             $mail->SMTPAuth = true;                                          // Send using SMTP
             $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-            $mail->Username   = 'empresahuella@gmail.com';                     // SMTP username
-            $mail->Password   = 'huella1234567';                               // SMTP password
+            $mail->Username   = '@gmail.com';                     // SMTP username
+            $mail->Password   = '';                               // SMTP password
             $mail->SMTPSecure = 'ssl';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
             $mail->Port       = 465;
 
             //Recipients
-            $mail->setFrom('empresahuella@gmail.com', 'Huella');
+            $mail->setFrom('@gmail.com', 'Huella');
             $mail->addAddress($email, $email);
             // Content
             $mail->isHTML(false);                                  // Set email format to HTML
